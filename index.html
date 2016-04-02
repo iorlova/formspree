@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <script   src="https://code.jquery.com/jquery-2.2.2.min.js"
+        integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+        crossorigin="anonymous"></script>
+        <script src="send-message.js"></script>
         <title> </title>
     </head>
     <body>
-        <form action="messages.js" method="post">
+        <form action="send-message.js" method="post">
             <label for="name">Name</label>
                 <input id="name" type="text" required placeholder="your name here">
                 <br>
@@ -15,7 +20,7 @@
                 <p>Message</p>
                 <textarea name="message" cols="30" rows="5" required></textarea>
                 <br>
-                <input type="submit" value="Send message">
+                <input id="btn-send" type="submit" value="Send message">
             </form>
 
     </body>
